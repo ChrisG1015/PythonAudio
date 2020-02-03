@@ -1,8 +1,9 @@
 import speech_recognition as sr
 import sys 
 
+#Logs output of audio to a text file
 stdoutOrigin=sys.stdout 
-sys.stdout = open("log.txt", "w")
+sys.stdout = open("audiolog.txt", "w")
 
 r = sr.Recognizer()
 
